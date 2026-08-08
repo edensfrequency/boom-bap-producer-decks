@@ -7,6 +7,8 @@
 Two independent decks, a mixer, and a bank of sample pads per deck. The
 banner shows the installed version number under "PRODUCER DECKS".
 
+![Both decks loaded, mixer and scratch-strip FX visible](../assets/screen-shots/01-decks-mixer.png)
+
 ## Deck A / Deck B
 
 Each deck is independent — its own loaded sample, its own platter.
@@ -60,6 +62,8 @@ Each deck has its own bank of 16 one-shot trigger pads. Click the
 over to its pad grid (click **Platter** to switch back — the rest of
 that deck's controls, EQ, and FX stay active either way).
 
+![Deck A switched to its 4x4 pad grid](../assets/screen-shots/02-decks-pads.png)
+
 - **Drag an audio file onto any pad** to load a sample onto just that
   pad.
 - **Click a loaded pad** to trigger it — it plays once, start to finish.
@@ -69,8 +73,18 @@ that deck's controls, EQ, and FX stay active either way).
 - This is "plain trigger" mode: no per-pad volume, pitch, or envelope
   yet, and pads aren't MIDI-mapped in this build — click-to-trigger only.
 
+## Presets
+
+The bar just under the banner: a dropdown of your saved presets, a name
+field, **Save**, and **Delete**. Presets capture everything — both
+decks' loaded files, pitch/volume/EQ/filter/reverb, the crossfader, and
+the scratch-strip FX — independent of any DAW project, so they carry
+over between songs. Type a name and click **Save**; pick a preset from
+the dropdown to load it. Presets are stored on your machine, not inside
+the plugin's DAW-project state (which also saves/restores automatically
+on its own, per project, even without a named preset).
+
 ## What's not here yet
 
-Hot Cues / Slicer / Sampler pad-modes, saving your settings between
-sessions (presets), true independent time-stretch, and stem separation
-are all on the roadmap but not in this build.
+Hot Cues / Slicer / Sampler pad-modes, true independent time-stretch,
+and stem separation are all on the roadmap but not in this build.
