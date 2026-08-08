@@ -4,6 +4,15 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [0.2.0] - 2026-08-08
+
+### Added
+- Project state persistence — loaded files, pitch/volume/EQ/filter/
+  reverb, the crossfader, and scratch-strip FX all save and restore
+  with your project automatically
+- Presets — save/load/delete named presets independent of any DAW
+  project, from the new preset bar under the banner
+
 ## [0.1.0] - 2026-08-08
 
 First release.
