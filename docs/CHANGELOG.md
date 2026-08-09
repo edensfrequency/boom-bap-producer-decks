@@ -8,6 +8,19 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/), versioning
 follows [Semantic Versioning](https://semver.org/).
 
+## [0.4.0] - 2026-08-09
+
+### Added
+- Full host automation + MIDI Learn — every knob and toggle in the
+  plugin (Pitch, Volume, EQ, Filter, Reverb, Loop, Stutter Rate,
+  Crossfader, and the scratch-strip FX) can now be automated from your
+  DAW's timeline or right-click-mapped to a hardware controller
+- Play / Repeat / Stop pad trigger modes — right-click a pad to cycle
+  Play, Repeat (Free), or Repeat (Synced to the pad's own detected BPM);
+  Repeat pads start looping on the first click and stop on the second,
+  plus a new Stop All button silences every playing pad on a deck at
+  once
+
 ## [0.3.0] - 2026-08-09
 
 ### Added

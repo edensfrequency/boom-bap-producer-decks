@@ -75,12 +75,35 @@ that deck's controls, EQ, and FX stay active either way).
 
 - **Drag an audio file onto any pad** to load a sample onto just that
   pad.
-- **Click a loaded pad** to trigger it — it plays once, start to finish.
-- Clicking an already-playing pad **retriggers it from the start**
-  (cutting off whatever was still playing), rather than needing a
-  separate stop step.
-- This is "plain trigger" mode: no per-pad volume, pitch, or envelope
-  yet, and pads aren't MIDI-mapped in this build — click-to-trigger only.
+- **Click a loaded pad** to trigger it. What happens next depends on its
+  mode:
+  - **Play** (the default) — plays once, start to finish. Clicking an
+    already-playing pad retriggers it from the start.
+  - **Repeat** — starts looping the sample on the first click; clicking
+    it again stops it. **Repeat Free** loops the raw sample exactly as
+    recorded; **Repeat Synced** snaps the loop point to the nearest
+    whole beat of the sample's own detected BPM, so it doesn't
+    click/drift over repeated cycles.
+- **Right-click a pad** to cycle its mode: Play -> Repeat Free -> Repeat
+  Synced -> back to Play. A pad in a Repeat mode shows an orange border
+  and a small "R" (Free) or "RS" (Synced) badge.
+- **Stop All**, above the grid, silences every currently-playing pad on
+  that deck at once — handy once you've got a few Repeat pads looping.
+- No per-pad volume, pitch, or envelope yet, and pads aren't MIDI-mapped
+  in this build — click-to-trigger only.
+
+## Host automation and MIDI Learn
+
+Every knob and toggle in the plugin — Pitch, Volume, the 3-band EQ,
+Filter, Reverb, Loop Enabled/Length, and Stutter Rate per deck; the
+Crossfader; and the scratch-strip FX Type/Mix — is a real host parameter.
+Automate any of them from your DAW's timeline like any other plugin
+parameter. To map one to a hardware MIDI controller instead,
+right-click the control, choose **Learn**, then move the knob/fader/
+button on your controller — the next CC message it sends gets bound.
+Right-click again to clear the binding. Pads and the platter's
+click-drag scratch gesture aren't MIDI-mappable (they're triggers/
+gestures, not knobs).
 
 ## Presets
 
