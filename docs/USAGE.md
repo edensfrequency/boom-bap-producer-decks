@@ -27,6 +27,15 @@ Each deck is independent — its own loaded sample, its own platter.
 - **BPM / Key** — automatically detected when you load a sample (shows
   `--` for either if nothing could be estimated). **Sync** sets this
   deck's Pitch so its detected BPM matches your host's current tempo.
+- **Loop** — toggles a fixed-length loop on/off at wherever playback
+  currently is, using the deck's detected BPM. Click the length button
+  next to it (**4 / 8 / 16 / 32**) to cycle how many beats the loop
+  covers.
+- **Stutter** — hold to rapidly retrigger a short slice anchored at the
+  position when you pressed it; release to resume normal playback from
+  wherever the stutter left off. Click the rate button next to it
+  (**1/4 / 1/8 / 1/16 / 1/32**) to cycle the retrigger speed. Stutter
+  takes priority if you're holding it while Loop is also on.
 
 ## Deck mixer strip (High / Mid / Low / Filter / Reverb)
 
